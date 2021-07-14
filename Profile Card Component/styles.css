@@ -1,0 +1,110 @@
+hr
+{
+  position: relative;
+  bottom: 9%;
+}
+
+.page-body
+{
+  background-color: #19A2AE;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+}
+
+.top-pattern
+{
+  position: fixed;
+  bottom: 40%;
+  left: -15%;
+  width: 65%;
+  z-index: -1;
+}
+
+.bottom-pattern
+{
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  width: 65%;
+  z-index: -1;
+}
+
+.profile-card
+{
+  background-color: white;
+  border-radius: 25px;
+  height: 360px;
+  width: 350px;
+  margin: 10% 40% 0;
+  text-align: center;
+}
+
+.pattern
+{
+  border-radius: 25px 25px 0 0;
+}
+
+.victor-img
+{
+  border-radius: 100%;
+  border: white solid 5px;
+  position: relative;
+  bottom: 13.5%;
+}
+
+.name
+{
+  font-weight: 700;
+  position: relative;
+  bottom: 8%;
+}
+
+.age
+{
+  color: #969696;
+  font-weight: 400;
+}
+
+.place
+{
+  color: #969696;
+  font-weight: 400;
+  font-size: 15px;
+  padding-top: 50%;
+}
+
+.row
+{
+  padding: 0 5%;
+  position: relative;
+  bottom: 10%;
+}
+
+.stats
+{
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10% 15% 0;
+}
+
+.field
+{
+  color: #969696;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 430px)
+{
+  .profile-card
+  {
+    position: relative;
+    right: 100px;
+    top: 100px;
+    width: 280px;
+  }
+
+  .pattern
+  {
+    width: 280px;
+  }
+}
