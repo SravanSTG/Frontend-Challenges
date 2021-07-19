@@ -30,7 +30,7 @@ body
 {
   font-size: 2rem;
   font-weight: 700;
-  padding-bottom: 4%;
+  padding-bottom: 8%;
 }
 
 .insights
@@ -72,7 +72,7 @@ body
   z-index: -1;
 }
 
-@media only screen and (max-width: 430px)
+@media only screen and (max-width: 992px)
 {
   .big
   {
@@ -89,5 +89,20 @@ body
   .numbers
   {
     padding-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 1345px)
+{
+  .stat-background
+  {
+    padding-right: 4%;
+  }
+
+  .image
+  {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
