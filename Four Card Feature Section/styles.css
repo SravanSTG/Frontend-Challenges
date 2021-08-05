@@ -1,0 +1,156 @@
+body
+{
+  background-color: hsl(0, 0%, 98%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.heading-light
+{
+  color: hsl(234, 12%, 34%);
+  font-size: 2rem;
+  font-weight: 200;
+  margin-top: 3.2rem;
+}
+
+.heading-dark
+{
+  color: hsl(234, 12%, 34%);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.description
+{
+  color: hsl(229, 6%, 66%);
+  font-size: 15px;
+  margin: 1.2rem auto;
+  width: 35%;
+}
+
+.box-holder
+{
+  margin: 3.5% 10%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 30px;
+  grid-template-areas:
+    ". . . . t t t t . . . ."
+    "s s s s t t t t c c c c"
+    "s s s s k k k k c c c c"
+    ". . . . k k k k . . . .";
+}
+
+.feature-box
+{
+  background-color: white;
+  border-top: 5px solid;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 2px 1px rgba(76, 78, 97, .2); */
+  line-height: 1.65;
+  text-align: left;
+}
+
+.feature-heading
+{
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  margin: 8% 10% 4% 8%;
+}
+
+.feature-info
+{
+  color: hsl(229, 6%, 66%);
+  font-size: 15px;
+  margin: 4% 10% 5% 8%;
+}
+
+.supervisor
+{
+  border-color: hsl(180, 62%, 55%);
+  grid-area: s;
+}
+
+.teambuilder
+{
+  border-color: hsl(0, 78%, 62%);
+  grid-area: t;
+}
+
+.calculator
+{
+  border-color: hsl(212, 86%, 64%);
+  grid-area: c;
+}
+
+.karma
+{
+  border-color: hsl(34, 97%, 64%);
+  grid-area: k;
+}
+
+.icon
+{
+  margin: 3% 9% 8% 0;
+  float: right;
+}
+
+@media screen and (max-width: 1255px)
+{
+  .box-holder
+  {
+    margin: 4% 6%;
+  }
+}
+
+@media screen and (max-width: 970px)
+{
+  .description
+  {
+    margin-bottom: 7%;
+    width: 50%;
+  }
+
+  .box-holder
+  {
+    margin: 4% 18%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 455px)
+{
+  .heading-light
+  {
+    margin: 5% 5% 0;
+    font-size: 1.8rem;
+  }
+
+  .heading-dark
+  {
+    margin: 0 5% 5%;
+    font-size: 1.8rem;
+  }
+
+  .description
+  {
+    margin: 0 5% 5%;
+    padding: 0 2%;
+    width: 90%;
+  }
+
+  .box-holder
+  {
+    margin: 12% 8.5%;
+  }
+}
+
+@media screen and (max-width: 390px)
+{
+  .heading-light, .heading-dark
+  {
+    font-size: 1.5rem;
+  }
+}
