@@ -24,7 +24,7 @@ body
 .description
 {
   color: hsl(229, 6%, 66%);
-  font-size: 15px;
+  font-size: 1rem;
   margin: 1.2rem auto;
   width: 35%;
 }
@@ -47,7 +47,7 @@ body
   background-color: white;
   border-top: 5px solid;
   border-radius: 5px;
-  /* box-shadow: 0 2px 2px 1px rgba(76, 78, 97, .2); */
+  box-shadow: 0 2px 20px 5px rgba(0, 0, 0, 10%);
   line-height: 1.65;
   text-align: left;
 }
@@ -55,6 +55,7 @@ body
 .feature-heading
 {
   color: hsl(234, 12%, 34%);
+  font-size: 1.2rem;
   font-weight: 600;
   margin: 8% 10% 4% 8%;
 }
@@ -62,7 +63,7 @@ body
 .feature-info
 {
   color: hsl(229, 6%, 66%);
-  font-size: 15px;
+  font-size: 1rem;
   margin: 4% 10% 5% 8%;
 }
 
