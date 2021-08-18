@@ -1,0 +1,253 @@
+body
+{
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+h1
+{
+  color: hsl(238, 29%, 16%);
+  margin-bottom: 10px;
+}
+
+.container
+{
+  background: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+  margin: 10% 18%;
+  min-width: 860px;
+  max-width: 975px;
+  /* Set background pattern */
+  background-image: url("images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: -573px -267px;
+}
+
+.container div
+{
+  flex: 1;
+}
+
+.image-container
+{
+  position: relative;
+}
+
+/* .pattern
+{
+  position: absolute;
+  left: -575px;
+  bottom: -225px;
+} */
+
+.box
+{
+  position: absolute;
+  bottom: 50px;
+  left: -90px;
+  z-index: 1;
+}
+
+.woman-online
+{
+  transform: translateX(-80px);
+}
+
+.woman-online-mobile
+{
+  display: none;
+}
+
+.accordion-container
+{
+  margin: 5% 0 10%;
+  position: relative;
+}
+
+.accordion
+{
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  margin-right: 20%;
+}
+
+.accordion img
+{
+  color: hsl(14, 88%, 65%);
+  float: right;
+  margin-top: 25px;
+}
+
+.rotate
+{
+  transform: rotate(180deg);
+}
+
+.question1, .question2, .question3, .question4, .question5
+{
+  color: hsl(237, 12%, 33%);
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.question1:hover, .question2:hover, .question3:hover, .question4:hover, .question5:hover
+{
+  color: hsl(14, 88%, 65%);
+}
+
+.bold
+{
+  font-weight: 700;
+}
+
+.answer1, .answer2, .answer3, .answer4, .answer5
+{
+  color: hsl(240, 6%, 50%);
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-right: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1300px)
+{
+  .container
+  {
+    margin: 10% 15%;
+  }
+}
+
+@media screen and (max-width: 1220px)
+{
+  .container
+  {
+    margin: 10% 12%;
+  }
+}
+
+@media screen and (max-width: 1140px)
+{
+  .container
+  {
+    margin: 10%;
+  }
+}
+
+@media screen and (max-width: 1070px)
+{
+  .container
+  {
+    min-width: 830px;
+    max-width: 860px;
+    margin: 10% 8%;
+  }
+
+  .accordion
+  {
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: 1000px)
+{
+  h1
+  {
+    margin-top: 0;
+  }
+
+  .container
+  {
+    flex-direction: column; 
+    margin: 20% 15%;
+    min-width: unset;
+    max-width: unset;
+    background-image: url("images/bg-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    /* background-position: 220px 0; */
+    background-position: top center;
+  }
+
+  .box
+  {
+    display: none;
+  }
+
+  .woman-online
+  {
+    display: none;
+  }
+
+  .woman-online-mobile
+  {
+    display: inline;
+    transform: translate(-14px, -109px);
+  }
+
+  .accordion-container
+  {
+    margin-top: 0;
+    margin-bottom: 15%;
+    text-align: center;
+  }
+
+  .accordion
+  {
+    margin: 0 10%;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 670px)
+{
+  .container
+  {
+    margin: 30% 10% 20%;
+  }
+}
+
+@media screen and (max-width: 480px)
+{
+  .container
+  {
+    margin: 35% 5% 20%;
+  }
+
+  .accordion
+  {
+    margin: 0 25px;
+  }
+
+  .question1, .question2, .question3, .question4, .question5
+  {
+    font-size: 0.85rem;
+  }
+
+  .answer1, .answer2, .answer3, .answer4, .answer5
+  {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 370px)
+{
+  .container
+  {
+    margin: 40% 0 20%;
+  }
+
+  .question1, .question2, .question3, .question4, .question5
+  {
+    font-size: 0.8rem;
+  }
+
+  .answer1, .answer2, .answer3, .answer4, .answer5
+  {
+    font-size: 0.8rem;
+  }
+}
