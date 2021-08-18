@@ -3,6 +3,9 @@ body
   background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   background-repeat: no-repeat;
   font-family: 'Kumbh Sans', sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 h1
@@ -87,7 +90,7 @@ h1
   transform: rotate(180deg);
 }
 
-.question1, .question2, .question3, .question4, .question5
+.question
 {
   color: hsl(237, 12%, 33%);
   display: inline-block;
@@ -95,7 +98,7 @@ h1
   font-weight: 400;
 }
 
-.question1:hover, .question2:hover, .question3:hover, .question4:hover, .question5:hover
+.question:hover
 {
   color: hsl(14, 88%, 65%);
 }
@@ -163,7 +166,7 @@ h1
 
   .container
   {
-    flex-direction: column; 
+    flex-direction: column;
     margin: 20% 15%;
     min-width: unset;
     max-width: unset;
@@ -223,7 +226,7 @@ h1
     margin: 0 25px;
   }
 
-  .question1, .question2, .question3, .question4, .question5
+  .question
   {
     font-size: 0.85rem;
   }
@@ -241,7 +244,7 @@ h1
     margin: 40% 0 20%;
   }
 
-  .question1, .question2, .question3, .question4, .question5
+  .question
   {
     font-size: 0.8rem;
   }
