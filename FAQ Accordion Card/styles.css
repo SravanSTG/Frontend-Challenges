@@ -3,9 +3,6 @@ body
   background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   background-repeat: no-repeat;
   font-family: 'Kumbh Sans', sans-serif;
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
 }
 
 h1
