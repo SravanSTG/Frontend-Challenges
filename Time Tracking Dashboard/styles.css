@@ -1,0 +1,335 @@
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(226, 43%, 10%);
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(4, auto);
+  grid-gap: 25px;
+}
+
+.report-container {
+  grid-row: 1 / -1;
+  /* background-color: hsl(235, 46%, 20%); */
+}
+
+.report-container > .person {
+  background-color: hsl(246, 80%, 60%);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.report-container > .time-cycle {
+  background-color: hsl(235, 46%, 20%);
+  padding: 10px 25px 12px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.jeremy-img {
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  border: 3px solid #fff;
+  margin-bottom: 12px;
+}
+
+.person > h1 {
+  font-weight: normal;
+  font-weight: 300;
+  margin-right: 40px;
+  margin-bottom: 0;
+}
+
+.person > h1 > span {
+  font-size: 0.8rem;
+  font-weight: 300;
+  display: block;
+  color: hsl(236, 100%, 87%);
+}
+
+.person .robson {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.work,
+.play,
+.study,
+.exercise,
+.social,
+.selfcare {
+  border-radius: 15px;
+  width: 200px;
+}
+
+.icon-container {
+  max-height: 36px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.icon {
+  height: 55px;
+  padding-right: 20px;
+}
+
+.work-stats,
+.play-stats,
+.study-stats,
+.exercise-stats,
+.social-stats,
+.selfcare-stats {
+  padding: 25px;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+}
+
+.work-stats:hover,
+.play-stats:hover,
+.study-stats:hover,
+.exercise-stats:hover,
+.social-stats:hover,
+.selfcare-stats:hover {
+  background-color: #383971;
+}
+
+.work-stats > div > h2,
+.play-stats > div > h2,
+.study-stats > div > h2,
+.exercise-stats > div > h2,
+.social-stats > div > h2,
+.selfcare-stats > div > h2 {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+}
+
+.work-stats > h3,
+.play-stats > h3,
+.study-stats > h3,
+.exercise-stats > h3,
+.social-stats > h3,
+.selfcare-stats > h3 {
+  font-weight: lighter;
+  font-size: 2.8rem;
+  margin: 20px 35px 10px 0;
+}
+
+.work-stats > p,
+.play-stats > p,
+.study-stats > p,
+.exercise-stats > p,
+.social-stats > p,
+.selfcare-stats > p {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: hsl(236, 100%, 87%);
+}
+
+.work-stats > div,
+.play-stats > div,
+.study-stats > div,
+.exercise-stats > div,
+.social-stats > div,
+.selfcare-stats > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.work {
+  background-color: hsl(15, 100%, 70%);
+}
+
+.play {
+  background-color: hsl(195, 74%, 62%);
+}
+
+.study {
+  background-color: hsl(348, 100%, 68%);
+}
+
+.exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+
+.social {
+  background-color: hsl(264, 64%, 52%);
+}
+
+.selfcare {
+  background-color: hsl(43, 84%, 65%);
+}
+
+.inactive {
+  color: hsl(235, 45%, 61%);
+}
+
+.active {
+  color: white;
+}
+
+.daily:hover,
+.weekly:hover,
+.monthly:hover {
+  color: white;
+}
+
+/* Media Queries */
+@media screen and (max-width: 950px) {
+  .container {
+    grid-gap: 20px;
+  }
+
+  .report-container > .person {
+    padding: 25px 20px;
+  }
+
+  .report-container > .time-cycle {
+    padding: 10px 20px 12px;
+  }
+
+  .person > h1 {
+    font-size: 1.8rem;
+    margin-right: 20px;
+  }
+
+  .person .robson {
+    margin-bottom: 11px;
+  }
+
+  .work,
+  .play,
+  .study,
+  .exercise,
+  .social,
+  .selfcare {
+    width: 160px;
+  }
+
+  .work-stats,
+  .play-stats,
+  .study-stats,
+  .exercise-stats,
+  .social-stats,
+  .selfcare-stats {
+    padding: 25px 15px;
+  }
+
+  .work-stats > h3,
+  .play-stats > h3,
+  .study-stats > h3,
+  .exercise-stats > h3,
+  .social-stats > h3,
+  .selfcare-stats > h3 {
+    font-size: 2rem;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  main {
+    height: unset;
+    margin: 50px 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .report-container > .person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .jeremy-img {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .person .jeremy {
+    margin: 0;
+    margin-right: 10px;
+  }
+
+  .person .robson {
+    margin: 0;
+    padding-top: 15px;
+  }
+
+  .time-cycle {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .work,
+  .play,
+  .study,
+  .exercise,
+  .social,
+  .selfcare {
+    width: unset;
+  }
+
+  .work-stats,
+  .play-stats,
+  .study-stats,
+  .exercise-stats,
+  .social-stats,
+  .selfcare-stats {
+    padding: 15px;
+    padding-top: 20px;
+  }
+
+  .work-stats > h3,
+  .play-stats > h3,
+  .study-stats > h3,
+  .exercise-stats > h3,
+  .social-stats > h3,
+  .selfcare-stats > h3 {
+    font-size: 2.4rem;
+  }
+
+  .work-stats > p,
+  .play-stats > p,
+  .study-stats > p,
+  .exercise-stats > p,
+  .social-stats > p,
+  .selfcare-stats > p {
+    font-size: 0.9rem;
+    float: right;
+    margin-top: 36px;
+  }
+
+  .work-hrs,
+  .work-hrs-prev,
+  .play-hrs,
+  .play-hrs-prev,
+  .study-hrs,
+  .study-hrs-prev,
+  .exercise-hrs,
+  .exercise-hrs-prev,
+  .social-hrs,
+  .social-hrs-prev,
+  .selfcare-hrs,
+  .selfcare-hrs-prev {
+    display: inline-block;
+  }
+}
