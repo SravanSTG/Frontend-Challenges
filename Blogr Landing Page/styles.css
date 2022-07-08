@@ -452,6 +452,13 @@ nav {
     flex-direction: column;
   }
 
+  .header-content {
+    background-image: url("./images/bg-pattern-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left -180px top -390px;
+  }
+
   .product-dropdown,
   .company-dropdown,
   .connect-dropdown,
@@ -631,6 +638,11 @@ nav {
 }
 
 @media screen and (max-width: 600px) {
+  .header-content {
+    background-position: left -300px top -250px;
+    overflow: hidden;
+  }
+
   nav {
     padding: 30px 40px;
   }
